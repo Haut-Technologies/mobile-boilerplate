@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Boilerplate",
+    "slug": "boilerplate",
+    "orientation": "portrait",
+    "primaryColor": "#2D9AED",
+    "jsEngine": "hermes",
+    "assetBundlePatterns": ["**/*"]
+  }
+}
