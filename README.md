@@ -6,12 +6,13 @@ This is intended to be used with the [Back End Boilerplate](https://github.com/H
 
 Install Node Version Manager: https://github.com/nvm-sh/nvm
 
+Install Expo Go app on a test device: https://expo.dev/client
+
 Then run these commands
 
 ```sh
 nvm install 16 # install and use latest version of Node 16
 npm install # install project dependencies
-npx expo login # login to your expo account
 npm run schema # fetches the GraphQL schema from the server
 npm run relay # generates types and code for the GraphQL client
 npm start # start development server and test application using expo go mobile app
