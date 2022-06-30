@@ -4,7 +4,6 @@ This is intended to be used with the [Back End Boilerplate](https://github.com/H
 
 ## Quick start
 
-
 Install docker and docker-compose
 
 - For Debian based Linux distributions (includes Ubuntu):
@@ -36,7 +35,7 @@ npm run relay # generates types and code for the GraphQL client
 npm start # start development server and test application using expo go mobile app
 ```
 
-> Scanning the generated QR code through Expo Go on Android may not work so try typing the URL printed by `npm start` e.g.
+> Scanning the generated QR code through Expo Go on Android may not work so try to "Enter URL manually" by copying the URL printed by `npm start` e.g.
 > `› Metro waiting on exp://ek-939.clearcharles.haut-rn.exp.direct:80`
 
 ## Using VSCode for Editing

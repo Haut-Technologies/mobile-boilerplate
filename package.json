@@ -1,7 +1,7 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "npx expo start",
+    "start": "npx expo start --tunnel",
     "android": "npx expo start --android",
     "ios": "npx expo start --ios",
     "web": "npx expo start --web",
@@ -38,14 +38,15 @@
     "lodash": "^4.17.21",
     "npm": "^8.3.0",
     "react": "17.0.1",
-    "react-native-screens": "~3.10.1",
     "react-native": "0.64.3",
+    "react-native-screens": "~3.10.1",
     "react-relay": "^11.0.2",
     "relay-runtime": "^13.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@eslint/eslintrc": "^0.4.3",
+    "@expo/ngrok": "^4.1.0",
     "@npmcli/fs": "^1.1.1",
     "@types/jest": "^27.4.0",
     "@types/lodash": "^4.14.178",
