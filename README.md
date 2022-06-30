@@ -23,8 +23,6 @@ docker-compose run --service-ports --rm haut-rn
 
 > Run `sudo docker-compose` instead of `docker-compose` if your host OS in Linux
 
-> Please commit changes through the `git` CLI within the Docker container if your host OS is Windows instead of via an IDE
-
 ## Testing with Expo Go App
 
 Install Expo Go app on a test device: https://expo.dev/client
