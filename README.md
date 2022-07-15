@@ -17,6 +17,7 @@ Install docker and docker-compose
 Then run the commands in the next sections within a Docker container by running
 
 ```sh
+docker-compose build haut-rn
 docker-compose run --service-ports --rm haut-rn
 ```
 
