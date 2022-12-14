@@ -1,8 +1,0 @@
-type Mutation {
-  dummy: Boolean!
-}
-
-type Query {
-  dummy: Boolean!
-}
-

@@ -10,6 +10,7 @@ Install docker and docker-compose
   - `sudo apt install docker.io`
   - `sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
   - `sudo chmod +x /usr/local/bin/docker-compose`
+  - To run `docker` and `docker-compose` without needing `sudo`: `sudo groupadd docker && sudo usermod -aG docker $USER`. Then logout and login back in again to your computer.
 - For MacOS:
   - `brew install --cask docker`
 - For Windows: https://docs.docker.com/desktop/windows/install/
@@ -20,18 +21,18 @@ Then run the commands in the next sections within a Docker container by running
 docker-compose run --service-ports --rm haut-rn
 ```
 
-> Run `sudo docker-compose` instead of `docker-compose` if your host OS in Linux
-
 ## Testing with Expo Go App
 
 Install Expo Go app on a test device: https://expo.dev/client
 
+## Setting up the back end
+
+Clone [this repository](https://github.com/Haut-Technologies/back-end-boilerplate) and follow the instructions in the README. If running the back end on a different computer than the test device, you'll need to export the environment variable `BACK_END_URL` to an IP address of computer running the back end with the port number e.g. `export BACK_END_URL="172.30.1.12:3030"`.
+
 Then run these commands
 
 ```sh
-npm install # install project dependencies
-npm run schema # fetches the GraphQL schema from the server
-npm run relay # generates types and code for the GraphQL client
+npm install # install project dependencies and generate code
 npm start # start development server and test application using expo go mobile app
 ```
 

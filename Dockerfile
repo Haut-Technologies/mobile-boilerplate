@@ -12,5 +12,12 @@ WORKDIR /home/node
 RUN npm config rm proxy
 RUN npm config rm https-proxy
 
+ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
+
+ENV PATH=$PATH:/home/node/.npm-global/bin
+
+RUN npm install --global expo-cli@5.4.12
+RUN npm install --global eas-cli@0.54.1
+
 WORKDIR /home/node/haut-rn
 CMD ["bash"]

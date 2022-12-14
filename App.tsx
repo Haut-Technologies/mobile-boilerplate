@@ -9,6 +9,7 @@ import {
   Store,
 } from "relay-runtime";
 import Navigation from "screens/navigation/Root";
+import backEnd from "utils/backEnd.json";
 
 export default function App(): JSX.Element {
   // Due to the Android yellow box warnings for long set timers
@@ -22,11 +23,9 @@ export default function App(): JSX.Element {
 
 const environment = buildEnvironment();
 
-const backEndURLBase = "http://172.30.1.48:3030"; // Change this to address of server if using a real device
-
 function buildEnvironment(): Environment {
   const fetchQuery: FetchFunction = (operation, variables) => {
-    return fetch(`${backEndURLBase}/api`, {
+    return fetch(`http://${backEnd.url}/api`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
