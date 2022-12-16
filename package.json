@@ -71,6 +71,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-react-native": "^4.0.0",
     "eslint-plugin-relay": "^1.8.3",
+    "get-graphql-schema": "2.1.2",
     "graphql": "^15.5.0",
     "metro": "^0.68",
     "prettier": "^2.5.1",
