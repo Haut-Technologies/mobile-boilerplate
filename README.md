@@ -5,21 +5,20 @@ This is intended to be used with the [Back End Boilerplate](https://github.com/H
 ## Quick start
 
 Install docker and docker-compose
-
-- For Debian based Linux distributions (includes Ubuntu):
-  - `sudo apt install docker.io`
-  - `sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
-  - `sudo chmod +x /usr/local/bin/docker-compose`
-  - To run `docker` and `docker-compose` without needing `sudo`: `sudo groupadd docker && sudo usermod -aG docker $USER`. Then logout and login back in again to your computer.
 - For MacOS:
   - `brew install --cask docker`
 - For Windows: https://docs.docker.com/desktop/windows/install/
 
-Then run the commands in the next sections within a Docker container by running
-
+You can run the following commands in the next sections within a Docker container by running
 ```sh
 docker-compose build haut-rn
 docker-compose run --service-ports --rm haut-rn
+```
+and replacing `localhost` in `package.json` with `host.docker.internal` if running MacOS or Windows.
+
+If running Linux, don't use docker and instead make sure you are running node 16.13.2 and install the expo CLI globally
+```
+npm install --global expo-cli@5.4.12
 ```
 
 ## Testing with Expo Go App
