@@ -30,6 +30,12 @@
       "!**/jest.setup.js"
     ]
   },
+  "relay": {
+    "artifactDirectory": "./src/__generated__",
+    "language": "typescript",
+    "schema": "./schema.graphql",
+    "src": "./src"
+  },
   "dependencies": {
     "@react-navigation/native": "^6.0.6",
     "@react-navigation/stack": "^6.0.11",
