@@ -20,4 +20,4 @@ coverage/
 src/utils/backEnd.json
 
 schema.graphql
-**/__generated__
+**/__generated__/*.ts
